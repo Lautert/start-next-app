@@ -1,0 +1,130 @@
+// Color system
+
+// stylelint-disable
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge((
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+), $colors);
+
+// $palette-green: #75BF8E; // Verde Claro
+// $palette-green-dark: #008D4C; // Verde Escuro
+// $palette-green-half: #00A65A; // Verde Medio
+// $palette-gray: #222D32; // Cinza Escuro
+// $palette-gray-half: #374850; // Cinza Medio
+// $palette-orange: #F66B30; // Laranja
+
+$primary:       #007bff;
+$primary-border: dark($primary, 10);
+$secondary:     #6c757d !default;
+$secondary-border: dark($secondary, 10) !default;
+$third:			#fd7e14 !default;
+$third-border: dark($third, 10) !default;
+
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+), $theme-colors);
+// stylelint-enable
+
+$default-text-color: #474747;
+// $primary: #021e5e; // #1c3268;
+// $primary-border:#111e3e;
+// $green-accept: #a5c427;
+// $light-gray: #f5f5f5;
+// $blue-light: #3378be;
+// $green-default: #a5c427;
+// $gray-light: #f5f5f5;
+
+$border-gray: #CCC;
+$border-error: red;
+$border-white: #FAFAFA;
+
+$icon-color: #CCC;
+
+$brandPrimary: #20a8d8;
+
+$brandSuccess: #00a65a;
+$brandSuccess-border: #00733e;
+
+$brandInfo: #00c0ef;
+$brandInfo-border: #0097bc;
+
+$brandWarning: #f9bb42;
+$brandWarning-border: #f8a410;
+
+$brandDanger: #dd4b39;
+$brandDanger-border: #c23321;
+
+$brandDefault: #888888;
+$brandDisabled: #EEE;
+
+// SIDEBAR
+$sidebar-nav-link-hover-bg: #75BF8E;
+
+// NAVBAR
+$navbar-bg: $primary;
+$navbar-brand-bg: $primary;
+
+$navbar-brand-minimized-bg: $primary;

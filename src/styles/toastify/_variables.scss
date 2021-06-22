@@ -1,0 +1,48 @@
+$border-gray: #ccc;
+$border-error: red;
+$border-white: #fafafa;
+
+$icon-color: #ccc;
+
+$brandPrimary: #20a8d8;
+
+$brandSuccess: #00a65a;
+$brandSuccess-border: #00733e;
+
+$brandInfo: #00c0ef;
+$brandInfo-border: #0097bc;
+
+$brandWarning: #f9bb42;
+$brandWarning-border: #f8a410;
+
+$brandDanger: #dd4b39;
+$brandDanger-border: #c23321;
+
+$brandDefault: #888888;
+$brandDisabled: #eee;
+
+$rt-namespace: "Toastify";
+$rt-toast-width: 320px !default;
+$rt-toast-background: #ffffff !default;
+$rt-toast-min-height: 64px !default;
+$rt-toast-max-height: 800px !default;
+
+$rt-color-default: $brandDefault !default;
+
+$rt-color-info: $brandInfo !default;
+$rt-color-success: $brandSuccess !default;
+$rt-color-warning: $brandWarning !default;
+$rt-color-error: $brandDanger !default;
+
+$rt-text-color-info: #fff;
+$rt-text-color-success: #fff; //darken($rt-color-success, 30);
+$rt-text-color-warning: #fff;
+$rt-text-color-error: #fff;
+
+$rt-text-color-default: #aaa !default;
+
+$rt-color-progress-default: $rt-color-default; // linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55) !default;
+
+$rt-mobile: "only screen and (max-width : 480px)" !default;
+$rt-font-family: sans-serif !default;
+$rt-z-index: 9999 !default;
