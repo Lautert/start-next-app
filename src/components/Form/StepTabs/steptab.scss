@@ -1,0 +1,68 @@
+@import '../../../style/palette.scss';
+
+.step-tabs{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+
+	.steps{
+		ol{
+			text-align: center;
+			list-style: none;
+			margin: 0;
+			padding: 15px 0;
+
+			li{
+				color: black;
+				border-bottom: 4px solid #CCCCCC;
+				display: inline-block;
+				text-align: center;
+				cursor: pointer;
+				padding: 10px 25px;
+				margin: 0;
+				position: relative;
+
+				&:before{
+					position: absolute;
+					bottom: -12px;
+					content: "\25CF";
+					left: calc(50% - 12px);
+					color: #CCC;
+					background-color: white;
+					width: 24px;
+					text-align: center;
+					border-radius: 100%;
+				}
+
+				&.doing{
+					border-color: #FF8000;
+					&:before{
+						color: #FF8000;
+					}
+				}
+
+				&.done{
+					border-color: green;
+
+					&:before{
+						color: green;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-buttons{
+		display: inline-block;
+		padding: 15px;
+
+		.prev-button{
+			float: left;
+		}
+
+		.next-button{
+			float: right;
+		}
+	}
+}

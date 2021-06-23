@@ -6,7 +6,7 @@ import '@/styles/globals.scss';
 
 import SiteLayout from '../layout/container';
 import { ToastContainer } from 'react-toastify';
-import LockScreen from '@/components/LockScreen';
+import LockScreen from '@/components/Composite/LockScreen';
 
 class DefaultApp extends App {
     render() {

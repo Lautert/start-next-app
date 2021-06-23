@@ -1,0 +1,65 @@
+@import "src/styles/palette";
+
+.repeat-fieldset {
+	padding: 5px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	float: left;
+
+	> div {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		border-radius: 4px;
+		border: solid 1px #ccc;
+		padding: 5px;
+
+		.legend {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+			border-bottom: solid 1px #ccc;
+
+			h4 {
+				display: flex;
+				height: 50px;
+				align-items: center;
+				padding: 5px;
+			}
+		}
+
+		.repeat-content {
+			display: flex;
+			flex-direction: column;
+
+			.repeat-line {
+				display: flex;
+				flex-direction: row-reverse;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;
+				border: solid 1px #ccc;
+				margin: 5px 0;
+
+				.repeat-component-render {
+					width: 100%;
+				}
+				.repeat-component-icon {
+					width: auto;
+					~ .repeat-component-render{
+						border-right: solid 1px #ccc;
+					}
+				}
+			}
+		}
+	}
+
+	&.error {
+		> div {
+			border-color: $border-error;
+		}
+	}
+}

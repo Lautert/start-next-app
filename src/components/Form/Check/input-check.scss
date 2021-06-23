@@ -1,0 +1,23 @@
+@import 'src/styles/palette';
+
+// .template_input{
+// 	.container{
+		.MuiFormControlLabel-root{
+			margin:0 !important;
+			padding: 0 5px;
+			max-height: 100%;
+
+			// .MuiButtonBase-root{
+			// 	padding-right: 0;
+			// }
+
+			.MuiFormControlLabel-label{
+				padding: 9px;
+			}
+
+			.MuiCheckbox-colorPrimary.Mui-checked{
+				color: $dark-blue;
+			}
+		}
+// 	}
+// }

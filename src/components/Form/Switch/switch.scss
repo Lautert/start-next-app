@@ -1,0 +1,11 @@
+@import 'src/styles/palette';
+
+.MuiSwitch-root{
+	.MuiSwitch-colorSecondary.Mui-checked{
+		color: $dark-blue;
+	}
+
+	.MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track{
+		background-color: lighten($dark-blue, 0);
+	}
+}

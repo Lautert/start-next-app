@@ -1,0 +1,47 @@
+@import '../../../../core/scss/palette';
+
+.MuiAutocomplete-root{
+	width: 100%;
+
+	.MuiInputLabel-formControl{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		left: 8px;
+
+		&.Mui-focused{
+			display: none;
+		}
+	}
+
+	fieldset{
+		legend{
+			visibility: hidden !important;
+			width: 0px !important;
+		}
+	}
+
+	.MuiInputLabel-outlined {
+		transform: none !important;
+	}
+
+	.MuiOutlinedInput-root {
+		padding: 0 !important;
+
+		input{
+			height: 36px;
+			padding: 8px !important;
+			box-sizing: border-box;
+		}
+
+		.MuiOutlinedInput-notchedOutline{
+			border-color: $border-gray;
+		}
+
+		&:hover{
+			.MuiOutlinedInput-notchedOutline{
+				border-color: currentColor;
+			}
+		}
+	}
+}

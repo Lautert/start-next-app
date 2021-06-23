@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
-import lockScreenReducer from "@/components/LockScreen/reducer";
-import { LockScreen } from "@/components/LockScreen/reducer/types";
+import lockScreenReducer from "@/components/Composite/LockScreen/reducer";
+import { LockScreen } from "@/components/Composite/LockScreen/reducer/types";
 
 export interface ApplicationState{
     lockScreen: LockScreen
