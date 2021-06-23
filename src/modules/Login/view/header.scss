@@ -1,0 +1,17 @@
+@import "src/styles/palette";
+
+.header{
+	background-color: $dark-blue;
+
+	.logo{
+		width: auto;
+		height: 80px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		@media only screen and (min-width: 480px){
+			background-size: auto 100%;
+		}
+	}
+}

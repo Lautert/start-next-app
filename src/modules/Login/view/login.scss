@@ -1,0 +1,29 @@
+.content-login{
+	height: calc(100vh - 80px);
+	min-height: inherit !important;
+
+	.content-inputs{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.content-buttons{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+
+		.template_imput{
+			width: 100%;
+		}
+
+		@media only screen and (min-width: 480px){
+			flex-direction: row;
+			justify-content: space-between;
+
+			.template_imput{
+				max-width: 48%;
+			}
+		}
+	}
+}
